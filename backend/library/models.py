@@ -69,8 +69,6 @@ class AlbumSong(models.Model):
         verbose_name = 'Песни в альбоме'
         verbose_name_plural = 'Песни в альбомах'
 
-        # ordering = ('order', )
-
         constraints = [
             models.UniqueConstraint(fields=['album', 'song'], name='unique_album_song'),
             models.UniqueConstraint(fields=['album', 'order'], name='unique_album_order'),

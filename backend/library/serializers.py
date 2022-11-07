@@ -1,4 +1,6 @@
 from rest_framework import serializers
+from rest_framework.fields import SerializerMethodField
+
 from library.models import *
 
 
@@ -31,9 +33,13 @@ class AlbumSerializer(serializers.ModelSerializer):
     Сериализация модели альбома
     """
 
-    songs = SongSerializer(read_only=True, many=True)
+    songs = SerializerMethodField(method_name='get_order_songs_list')
 
     class Meta:
         model = Album
         fields = ('id', 'title', 'release_date', 'songs')
         read_only_fields = ('id',)
+
+    def get_order_songs_list(self, instance):
+        songs = instance.songs.order_by('albumsong__order')
+        return SongSerializer(songs, many=True).data
