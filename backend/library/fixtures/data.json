@@ -1,0 +1,238 @@
+[
+{
+  "model": "library.artist",
+  "pk": 1,
+  "fields": {
+    "title": "Asking Alexandria"
+  }
+},
+{
+  "model": "library.artist",
+  "pk": 2,
+  "fields": {
+    "title": "Bring Me The Horizon"
+  }
+},
+{
+  "model": "library.song",
+  "pk": 1,
+  "fields": {
+    "title": "Alone Again",
+    "duration": 228,
+    "artist": 1
+  }
+},
+{
+  "model": "library.song",
+  "pk": 2,
+  "fields": {
+    "title": "Faded Out",
+    "duration": 185,
+    "artist": 1
+  }
+},
+{
+  "model": "library.song",
+  "pk": 3,
+  "fields": {
+    "title": "Never Gonna Learn",
+    "duration": 198,
+    "artist": 1
+  }
+},
+{
+  "model": "library.song",
+  "pk": 4,
+  "fields": {
+    "title": "If I Could Erase It",
+    "duration": 251,
+    "artist": 1
+  }
+},
+{
+  "model": "library.song",
+  "pk": 5,
+  "fields": {
+    "title": "New Devil",
+    "duration": 214,
+    "artist": 1
+  }
+},
+{
+  "model": "library.song",
+  "pk": 6,
+  "fields": {
+    "title": "Pray For Plagues",
+    "duration": 261,
+    "artist": 2
+  }
+},
+{
+  "model": "library.song",
+  "pk": 7,
+  "fields": {
+    "title": "A Lot Like Vegas",
+    "duration": 129,
+    "artist": 2
+  }
+},
+{
+  "model": "library.song",
+  "pk": 8,
+  "fields": {
+    "title": "Black & Blue",
+    "duration": 273,
+    "artist": 2
+  }
+},
+{
+  "model": "library.song",
+  "pk": 9,
+  "fields": {
+    "title": "Slow Dance",
+    "duration": 76,
+    "artist": 2
+  }
+},
+{
+  "model": "library.song",
+  "pk": 10,
+  "fields": {
+    "title": "Liquor & Love Lost",
+    "duration": 159,
+    "artist": 2
+  }
+},
+{
+  "model": "library.album",
+  "pk": 1,
+  "fields": {
+    "title": "See Whats On The Inside",
+    "release_date": "2021-10-01"
+  }
+},
+{
+  "model": "library.album",
+  "pk": 2,
+  "fields": {
+    "title": "Never Gonna Learn EP",
+    "release_date": "2022-01-21"
+  }
+},
+{
+  "model": "library.album",
+  "pk": 3,
+  "fields": {
+    "title": "Count Your Blessings",
+    "release_date": "2006-10-30"
+  }
+},
+{
+  "model": "library.albumsong",
+  "pk": 1,
+  "fields": {
+    "album": 1,
+    "song": 1,
+    "order": 1
+  }
+},
+{
+  "model": "library.albumsong",
+  "pk": 2,
+  "fields": {
+    "album": 1,
+    "song": 2,
+    "order": 2
+  }
+},
+{
+  "model": "library.albumsong",
+  "pk": 3,
+  "fields": {
+    "album": 1,
+    "song": 3,
+    "order": 3
+  }
+},
+{
+  "model": "library.albumsong",
+  "pk": 4,
+  "fields": {
+    "album": 1,
+    "song": 4,
+    "order": 4
+  }
+},
+{
+  "model": "library.albumsong",
+  "pk": 5,
+  "fields": {
+    "album": 2,
+    "song": 5,
+    "order": 1
+  }
+},
+{
+  "model": "library.albumsong",
+  "pk": 6,
+  "fields": {
+    "album": 2,
+    "song": 3,
+    "order": 2
+  }
+},
+{
+  "model": "library.albumsong",
+  "pk": 7,
+  "fields": {
+    "album": 2,
+    "song": 2,
+    "order": 3
+  }
+},
+{
+  "model": "library.albumsong",
+  "pk": 8,
+  "fields": {
+    "album": 3,
+    "song": 6,
+    "order": 1
+  }
+},
+{
+  "model": "library.albumsong",
+  "pk": 9,
+  "fields": {
+    "album": 3,
+    "song": 7,
+    "order": 2
+  }
+},
+{
+  "model": "library.albumsong",
+  "pk": 10,
+  "fields": {
+    "album": 3,
+    "song": 8,
+    "order": 3
+  }
+},
+{
+  "model": "library.albumsong",
+  "pk": 11,
+  "fields": {
+    "album": 3,
+    "song": 9,
+    "order": 4
+  }
+},
+{
+  "model": "library.albumsong",
+  "pk": 12,
+  "fields": {
+    "album": 3,
+    "song": 10,
+    "order": 5
+  }
+}
+]
