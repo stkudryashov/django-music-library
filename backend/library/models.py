@@ -2,6 +2,10 @@ from django.db import models
 
 
 class Artist(models.Model):
+    """
+    Модель исполнителя
+    """
+
     title = models.CharField(max_length=128, verbose_name='Исполнитель')
 
     def __str__(self):
@@ -13,6 +17,10 @@ class Artist(models.Model):
 
 
 class Song(models.Model):
+    """
+    Модель песни
+    """
+
     title = models.CharField(max_length=128, verbose_name='Название')
     duration = models.IntegerField(verbose_name='Длительность (сек.)')
 
@@ -27,6 +35,10 @@ class Song(models.Model):
 
 
 class Album(models.Model):
+    """
+    Модель альбома
+    """
+
     title = models.CharField(max_length=128, verbose_name='Название')
     release_date = models.DateField(verbose_name='Дата релиза')
 
@@ -41,6 +53,10 @@ class Album(models.Model):
 
 
 class AlbumSong(models.Model):
+    """
+    Промежуточная таблица между альбомами и песнями
+    """
+
     album = models.ForeignKey(Album, on_delete=models.CASCADE, verbose_name='Альбом')
     song = models.ForeignKey(Song, on_delete=models.CASCADE, verbose_name='Песня')
 
@@ -57,4 +73,5 @@ class AlbumSong(models.Model):
 
         constraints = [
             models.UniqueConstraint(fields=['album', 'song'], name='unique_album_song'),
+            models.UniqueConstraint(fields=['album', 'order'], name='unique_album_order'),
         ]
