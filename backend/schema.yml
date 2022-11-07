@@ -487,8 +487,9 @@ components:
           format: date
           title: Дата релиза
         songs:
-          type: string
-          readOnly: true
+          type: array
+          items:
+            $ref: '#/components/schemas/Song'
       required:
       - id
       - release_date
@@ -584,8 +585,9 @@ components:
           format: date
           title: Дата релиза
         songs:
-          type: string
-          readOnly: true
+          type: array
+          items:
+            $ref: '#/components/schemas/Song'
     PatchedArtist:
       type: object
       description: Сериализация модели исполнителя
@@ -612,9 +614,7 @@ components:
           type: integer
           title: Длительность (сек.)
         artist:
-          allOf:
-          - $ref: '#/components/schemas/Artist'
-          readOnly: true
+          $ref: '#/components/schemas/Artist'
     Song:
       type: object
       description: Сериализация модели песни
@@ -630,9 +630,7 @@ components:
           type: integer
           title: Длительность (сек.)
         artist:
-          allOf:
-          - $ref: '#/components/schemas/Artist'
-          readOnly: true
+          $ref: '#/components/schemas/Artist'
       required:
       - artist
       - duration

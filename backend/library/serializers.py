@@ -20,7 +20,7 @@ class SongSerializer(serializers.ModelSerializer):
     Сериализация модели песни
     """
 
-    artist = ArtistSerializer(read_only=True)
+    artist = ArtistSerializer()
 
     class Meta:
         model = Song
