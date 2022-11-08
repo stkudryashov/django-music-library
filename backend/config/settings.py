@@ -115,6 +115,10 @@ REST_FRAMEWORK = {
         'rest_framework.parsers.MultiPartParser',
     ],
 
+    'DEFAULT_PERMISSION_CLASSES': [
+       'rest_framework.permissions.AllowAny',
+    ],
+
     'DEFAULT_SCHEMA_CLASS': 'drf_spectacular.openapi.AutoSchema',
 
     'DEFAULT_PAGINATION_CLASS': 'rest_framework.pagination.PageNumberPagination',
@@ -130,6 +134,7 @@ SPECTACULAR_SETTINGS = {
     'DESCRIPTION': 'API для музыкальной библиотеки',
     'VERSION': '1.0.0',
     'SERVE_INCLUDE_SCHEMA': False,
+    'SERVE_PERMISSIONS': ['rest_framework.permissions.AllowAny'],
 }
 
 
