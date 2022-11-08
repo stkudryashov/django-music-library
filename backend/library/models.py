@@ -42,7 +42,7 @@ class Album(models.Model):
     title = models.CharField(max_length=128, verbose_name='Название')
     release_date = models.DateField(verbose_name='Дата релиза')
 
-    songs = models.ManyToManyField(Song, through='AlbumSong', verbose_name='Песни')
+    songs = models.ManyToManyField(Song, through='AlbumSong', blank=True, verbose_name='Песни')
 
     def __str__(self):
         return f'{self.title}'
