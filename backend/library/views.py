@@ -8,12 +8,12 @@ from library.models import *
 
 
 @extend_schema_view(
-    list=extend_schema(description='Получить список исполнителей'),
-    create=extend_schema(description='Создать нового исполнителя'),
-    retrieve=extend_schema(description='Получить исполнителя по id'),
-    update=extend_schema(description='Заменить исполнителя'),
-    partial_update=extend_schema(description='Редактировать исполнителя'),
-    destroy=extend_schema(description='Удалить исполнителя'),
+    list=extend_schema(description='Получить список исполнителей', tags=['Artists']),
+    create=extend_schema(description='Создать нового исполнителя', tags=['Artists']),
+    retrieve=extend_schema(description='Получить исполнителя по id', tags=['Artists']),
+    update=extend_schema(description='Заменить исполнителя', tags=['Artists']),
+    partial_update=extend_schema(description='Редактировать исполнителя', tags=['Artists']),
+    destroy=extend_schema(description='Удалить исполнителя', tags=['Artists']),
 )
 class ArtistViewSet(ModelViewSet):
     """
@@ -27,12 +27,12 @@ class ArtistViewSet(ModelViewSet):
 
 
 @extend_schema_view(
-    list=extend_schema(description='Получить список песен'),
-    create=extend_schema(description='Создать новую песню'),
-    retrieve=extend_schema(description='Получить песню по id'),
-    update=extend_schema(description='Заменить песню'),
-    partial_update=extend_schema(description='Редактировать песню'),
-    destroy=extend_schema(description='Удалить песню'),
+    list=extend_schema(description='Получить список песен', tags=['Songs']),
+    create=extend_schema(description='Создать новую песню', tags=['Songs']),
+    retrieve=extend_schema(description='Получить песню по id', tags=['Songs']),
+    update=extend_schema(description='Заменить песню', tags=['Songs']),
+    partial_update=extend_schema(description='Редактировать песню', tags=['Songs']),
+    destroy=extend_schema(description='Удалить песню', tags=['Songs']),
 )
 class SongViewSet(ModelViewSet):
     """
@@ -46,12 +46,12 @@ class SongViewSet(ModelViewSet):
 
 
 @extend_schema_view(
-    list=extend_schema(description='Получить список альбомов'),
-    create=extend_schema(description='Создать новый альбом'),
-    retrieve=extend_schema(description='Получить альбом по id'),
-    update=extend_schema(description='Заменить альбом'),
-    partial_update=extend_schema(description='Редактировать альбом'),
-    destroy=extend_schema(description='Удалить альбом'),
+    list=extend_schema(description='Получить список альбомов', tags=['Albums']),
+    create=extend_schema(description='Создать новый альбом', tags=['Albums']),
+    retrieve=extend_schema(description='Получить альбом по id', tags=['Albums']),
+    update=extend_schema(description='Заменить альбом', tags=['Albums']),
+    partial_update=extend_schema(description='Редактировать альбом', tags=['Albums']),
+    destroy=extend_schema(description='Удалить альбом', tags=['Albums']),
 )
 class AlbumViewSet(ModelViewSet):
     """

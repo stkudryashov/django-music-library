@@ -16,7 +16,7 @@ paths:
         schema:
           type: integer
       tags:
-      - api
+      - Albums
       security:
       - cookieAuth: []
       - basicAuth: []
@@ -32,7 +32,7 @@ paths:
       operationId: api_library_albums_create
       description: Создать новый альбом
       tags:
-      - api
+      - Albums
       requestBody:
         content:
           application/json:
@@ -65,7 +65,7 @@ paths:
         description: A unique integer value identifying this Альбом.
         required: true
       tags:
-      - api
+      - Albums
       security:
       - cookieAuth: []
       - basicAuth: []
@@ -88,7 +88,7 @@ paths:
         description: A unique integer value identifying this Альбом.
         required: true
       tags:
-      - api
+      - Albums
       requestBody:
         content:
           application/json:
@@ -120,7 +120,7 @@ paths:
         description: A unique integer value identifying this Альбом.
         required: true
       tags:
-      - api
+      - Albums
       requestBody:
         content:
           application/json:
@@ -151,7 +151,7 @@ paths:
         description: A unique integer value identifying this Альбом.
         required: true
       tags:
-      - api
+      - Albums
       security:
       - cookieAuth: []
       - basicAuth: []
@@ -171,7 +171,7 @@ paths:
         schema:
           type: integer
       tags:
-      - api
+      - Artists
       security:
       - cookieAuth: []
       - basicAuth: []
@@ -187,7 +187,7 @@ paths:
       operationId: api_library_artists_create
       description: Создать нового исполнителя
       tags:
-      - api
+      - Artists
       requestBody:
         content:
           application/json:
@@ -220,7 +220,7 @@ paths:
         description: A unique integer value identifying this Исполнитель.
         required: true
       tags:
-      - api
+      - Artists
       security:
       - cookieAuth: []
       - basicAuth: []
@@ -243,7 +243,7 @@ paths:
         description: A unique integer value identifying this Исполнитель.
         required: true
       tags:
-      - api
+      - Artists
       requestBody:
         content:
           application/json:
@@ -275,7 +275,7 @@ paths:
         description: A unique integer value identifying this Исполнитель.
         required: true
       tags:
-      - api
+      - Artists
       requestBody:
         content:
           application/json:
@@ -306,7 +306,7 @@ paths:
         description: A unique integer value identifying this Исполнитель.
         required: true
       tags:
-      - api
+      - Artists
       security:
       - cookieAuth: []
       - basicAuth: []
@@ -326,7 +326,7 @@ paths:
         schema:
           type: integer
       tags:
-      - api
+      - Songs
       security:
       - cookieAuth: []
       - basicAuth: []
@@ -342,7 +342,7 @@ paths:
       operationId: api_library_songs_create
       description: Создать новую песню
       tags:
-      - api
+      - Songs
       requestBody:
         content:
           application/json:
@@ -375,7 +375,7 @@ paths:
         description: A unique integer value identifying this Песня.
         required: true
       tags:
-      - api
+      - Songs
       security:
       - cookieAuth: []
       - basicAuth: []
@@ -398,7 +398,7 @@ paths:
         description: A unique integer value identifying this Песня.
         required: true
       tags:
-      - api
+      - Songs
       requestBody:
         content:
           application/json:
@@ -430,7 +430,7 @@ paths:
         description: A unique integer value identifying this Песня.
         required: true
       tags:
-      - api
+      - Songs
       requestBody:
         content:
           application/json:
@@ -461,7 +461,7 @@ paths:
         description: A unique integer value identifying this Песня.
         required: true
       tags:
-      - api
+      - Songs
       security:
       - cookieAuth: []
       - basicAuth: []
